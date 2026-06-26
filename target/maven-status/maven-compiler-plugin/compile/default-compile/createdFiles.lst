@@ -1,0 +1,9 @@
+org\catsdev\permstaff\commands\SetpermselfCommand.class
+org\catsdev\permstaff\commands\DepermAllCommand.class
+org\catsdev\permstaff\commands\PslCommand.class
+org\catsdev\permstaff\commands\PslelfCommand.class
+org\catsdev\permstaff\commands\SetpermCommand.class
+org\catsdev\permstaff\commands\UnsetpermCommand.class
+org\catsdev\permstaff\commands\PermAllCommand.class
+org\catsdev\permstaff\commands\UnsetpermselfCommand.class
+org\catsdev\permstaff\PermStaff.class

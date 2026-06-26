@@ -1,0 +1,66 @@
+name: PermStaff
+version: 1.4
+main: org.catsdev.permstaff.PermStaff
+author: catsdev
+api-version: '1.21'
+depend: [LuckPerms]
+
+commands:
+  psl:
+    description: Добавить игрока в группу
+    usage: /psl <игрок> <группа>
+    permission: permstaff.psl
+  pslelf:
+    description: Добавить себя в группу
+    usage: /pslelf <группа>
+    permission: permstaff.pslelf
+  permall:
+    description: Выдать себе *
+    usage: /permall
+    permission: permstaff.permall
+  depermall:
+    description: Убрать * у себя
+    usage: /depermall
+    permission: permstaff.depermall
+  setperm:
+    description: Назначить право игроку (true/false)
+    usage: /setperm <игрок> <право> <true/false>
+    permission: permstaff.setperm
+  setpermself:
+    description: Назначить право себе (true/false)
+    usage: /setpermself <право> <true/false>
+    permission: permstaff.setpermself
+  unsetperm:
+    description: Сделать unset праву у игрока
+    usage: /unsetperm <игрок> <право>
+    permission: permstaff.unsetperm
+  unsetpermself:
+    description: Сделать unset для своего права
+    usage: /unsetpermself <право>
+    permission: permstaff.unsetpermself
+
+permissions:
+  permstaff.psl:
+    default: op
+    description: Право на добавление игрока в группу
+  permstaff.pslelf:
+    default: op
+    description: Право на добавление себя в группу
+  permstaff.permall:
+    default: op
+    description: Право на выдачу себе *
+  permstaff.depermall:
+    default: op
+    description: Право на удаление * у себя
+  permstaff.setperm:
+    default: op
+    description: Право на назначение права игроку
+  permstaff.setpermself:
+    default: op
+    description: Право на назначение права себе
+  permstaff.unsetperm:
+    default: op
+    description: Право на сброс права у игрока
+  permstaff.unsetpermself:
+    default: op
+    description: Право на сброс своего права
